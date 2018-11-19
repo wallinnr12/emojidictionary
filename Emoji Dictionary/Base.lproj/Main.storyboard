@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1020" y="26.53673163418291"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="heN-F5-BlL">
             <objects>
-                <viewController id="od8-Cc-VIt" sceneMemberID="viewController">
+                <viewController id="od8-Cc-VIt" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KNG-lr-JoF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +72,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dsz-he-fJS"/>
                     </view>
+                    <connections>
+                        <outlet property="definititionLabel" destination="gUU-Dw-TNW" id="Wtj-DT-UZT"/>
+                        <outlet property="emojiLabel" destination="00C-Kp-t3F" id="7dz-Hx-JnU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1l-W4-5F7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
